@@ -1,0 +1,154 @@
+@import "https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css";
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: sans-serif;
+  background-color: #181c1f;
+  color: #bdd1d4;
+  margin: 2rem;
+}
+
+a {
+  color:#48d9f3;
+}
+
+a:hover {
+  color:#368e9e;
+}
+
+header {
+  margin: 2rem 0;
+  display: flex;
+  gap: 1.5rem;
+  align-items: center;
+}
+
+header img {
+  width: 150px;
+  object-fit: contain;
+  border-radius:50%;
+}
+
+header h1 {
+  margin: 0;
+  color: #48d9f3;
+}
+
+header h1 span {
+  font-size:28px;
+}
+
+header p {
+  margin: 0;
+  color: #82c2ce;
+  margin-top:.5rem;
+}
+
+p.intro {text-align: center;}
+p.bold {font-weight: bold;}
+
+#tabs {
+  max-width: 1800px;
+  margin: 2rem 0;
+  overflow: hidden;
+}
+
+#tabs menu {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  gap: 0.25rem;
+}
+
+#tabs button {
+  font: inherit;
+  font-size: 0.85rem;
+  background-color: #282f33;
+  border: none;
+  border-bottom-color: #48d9f3;
+  color: #e0eff1;
+  border-radius: 4px 4px 0 0;
+  padding: 0.75rem 1rem;
+  cursor: pointer;
+  transition: all 0.2s ease-out;
+  min-width:180px;
+}
+
+button#drupal {
+  background: transparent url('../public/Wordmark_blue_RGB.png') no-repeat;
+  background-size: 80%;
+  background-position-x: center;
+  background-position-y: center;
+}
+button#drupal:hover {
+  background: transparent url('../public/Wordmark_black.png') no-repeat;
+  background-size: 80%;
+  background-position-x: center;
+  background-position-y: center;
+}
+button#drupal.active {
+  background: transparent url('../public/Wordmark_white.png') no-repeat;
+  background-size: 80%;
+  background-position-x: center;
+  background-position-y: center;
+}
+button#wordpress {
+  background: transparent url('../public/wplogo.png') no-repeat;
+  background-size: contain;
+}
+button#wordpress:hover {
+  background: transparent url('../public/wplogo-black.png') no-repeat;
+  background-size: contain;
+}
+button#wordpress.active {
+  background: transparent url('../public/wplogo-black.png') no-repeat;
+  background-size: contain;
+}
+button#aem {
+  background: transparent url('../public/aem.png') no-repeat;
+  background-size: contain;
+}
+button#aem:hover{
+  background-size: contain;
+}
+button#aem.active {
+  background: transparent url('../public/aem.png') no-repeat;
+  background-size: contain;
+}
+
+#tabs button {
+  width:auto;
+  height:42px;
+}
+
+#tabs button span {
+  
+  display: inline-block;
+  margin-left:30px;
+  font-size:18px;
+  letter-spacing:.5px;
+  color:#fff;
+}
+
+#tabs img {width:100%;height:auto;}
+
+#tabs button:hover,
+#tabs button.active {
+  background-color: #48d9f3;
+  color: #273133;
+}
+
+#tab-content {
+  background-color: #2d3942;
+  border-radius: 0 4px 4px 4px;
+  padding: 1rem;
+}
+
+#tab-content li {
+  margin: 0.25rem 0;
+  font-size:14px;
+}
+
+#tab-content img.host {width:200px;}
