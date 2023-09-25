@@ -1,3 +1,3 @@
 # portfolio
 A dynamic portfolio using the React Library for the UI and node.
-After cloning repository run "npm install" to install dependencies and "npm start" to launch the server.
+After cloning repository run "npm install" to install dependencies and "npm start" to launch the server. Tested with node v20.6.1.
