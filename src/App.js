@@ -32,15 +32,15 @@ export default function App() {
           </header>
         </div>
         <div className="row">
-          <div className="accordion accordion-flush">
-           <div className="accordion-item">
-            <h2 className="accordion-header" id="headingOne">
-              <button className="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
-                <h2>Front-End Development</h2>
-              </button>
-              <h6>I specialize in and focus on the user interface (UI) and user experience (UX) components of websites and web applications. My dedication goes beyond addressing aesthetics; it encompasses the crucial mission of crafting visually engaging and user-centric digital experiences. Additionally, I place a high priority on adhering to ADA (Americans with Disabilities Act) compliance standards, guaranteeing that these digital platforms offer accessibility to every user. <a className="readmore" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne" href="#">Read More..</a></h6>
-            </h2>
-            <div id="collapseOne" className="accordion-collapse collapse" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
+          <div className="accordion accordion-flush" id="accordionFrontEnd">
+             <div className="accordion-item">
+              <h2 className="accordion-header" id="headingFrontEnd">
+                <button className="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFrontEnd" aria-expanded="true" aria-controls="collapseFrontEnd">
+                  <h2>Front-End Development</h2>
+                </button>
+                <p>I specialize in and focus on the user interface (UI) and user experience (UX) components of websites and web applications. My dedication goes beyond addressing aesthetics; it encompasses the crucial mission of crafting visually engaging and user-centric digital experiences. Additionally, I place a high priority on adhering to ADA (Americans with Disabilities Act) compliance standards, guaranteeing that these digital platforms offer accessibility to every user. <a className="readmore" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFrontEnd" aria-expanded="true" aria-controls="#collapseFrontEnd" href="#">Read More..</a></p>
+              </h2>
+            <div id="collapseFrontEnd" className="accordion-collapse collapse" aria-labelledby="headingFrontEnd" data-bs-parent="#accordionFrontEnd">
               <div className="accordion-body">
                 <div className="row">
                 <div className="col-xs-12 col-md-6">
@@ -68,7 +68,7 @@ export default function App() {
                   <img className="width100" src="figma-concept.jpg" />
                 </div>
                 </div>
-                <h3>Previous Notable Front-end Projects</h3>
+                <h3>Previous Notable Front-End Projects</h3>
                 <div id="tabs">
                   <menu>
                     <button id="drupal"
@@ -101,28 +101,28 @@ export default function App() {
           </div>
         </div>
         <div className="accordion-item">
-          <h2 className="accordion-header" id="headingTwo">
+          <h2 className="accordion-header" id="accordionBackEnd">
             <button className="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
               <h2>Back-End Development</h2>
             </button>
-            <h6>Back-End Development is a pivotal aspect of the web process, encompassing database management, core application logic, API design, architectural planning, and server management. With my skills I promote the efficient and secure functioning of websites and web applications by optimizing data handling, enabling third-party integrations, ensuring scalability, and maintaining server reliability and security. <a className="readmore" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="true" aria-controls="collapseTwo" href="#">Read More..</a></h6>
+            <p>Back-End Development is a pivotal aspect of the web process, encompassing database management, core application logic, API design, architectural planning, and server management. With my skills I promote the efficient and secure functioning of websites and web applications by optimizing data handling, enabling third-party integrations, ensuring scalability, and maintaining server reliability and security. <a className="readmore" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="true" aria-controls="collapseTwo" href="#">Read More..</a></p>
           </h2>
-          <div id="collapseTwo" className="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
+          <div id="collapseTwo" className="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionBackEnd">
             <div className="accordion-body">
-                <div className="row infastructure">
-                  <h3>Infastructure Monitoring</h3>
-                  <p>I have a proven track record of effectively implementing custom-designed dashboards, which serve as a powerful platform for visualizing and presenting a wide spectrum of server and resource data. This accomplishment was achieved through the adept utilization of the Kibana Query Language, a specialized tool that allows for precise querying and visualization of complex data sets. These dashboards not only facilitate the monitoring of critical server metrics but also offer invaluable insights into resource utilization and performance, aiding in informed decision-making and resource optimization within the organization.</p>
-                  <div className="col-xs-12 col-md-6">
-                      <video controls autoPlay muted loop>
-                        <source src="LM-ScreenRecording-GIF-HQ-1-1.mp4" type="video/mp4" />
-                      </video>
-                  </div>
-                  <div className="col-xs-12 col-md-6">
-                      <video controls autoPlay muted loop>
-                        <source src="IM-ScreenRecording-GIF-HQ-v1-1.mp4" alt="logz" />
-                      </video>
-                  </div>
-                </div> 
+              <div className="row infastructure">
+                <h3>Infastructure Monitoring</h3>
+                <p>I have a proven track record of effectively implementing custom-designed dashboards, which serve as a powerful platform for visualizing and presenting a wide spectrum of server and resource data. This accomplishment was achieved through the adept utilization of the Kibana Query Language, a specialized tool that allows for precise querying and visualization of complex data sets. These dashboards not only facilitate the monitoring of critical server metrics but also offer invaluable insights into resource utilization and performance, aiding in informed decision-making and resource optimization within the organization.</p>
+                <div className="col-xs-12 col-md-6">
+                  <video controls autoPlay muted loop>
+                    <source src="LM-ScreenRecording-GIF-HQ-1-1.mp4" type="video/mp4" />
+                  </video>
+                </div>
+                <div className="col-xs-12 col-md-6">
+                  <video controls autoPlay muted loop>
+                    <source src="IM-ScreenRecording-GIF-HQ-v1-1.mp4" alt="logz" />
+                  </video>
+                </div>
+              </div> 
             </div>
           </div>
         </div>

@@ -48,6 +48,7 @@ header p {
 
 p.intro {text-align: center;}
 p.bold {font-weight: bold;}
+.margin-top {margin-top:42px;}
 
 #tabs {
   max-width: 1800px;
@@ -60,6 +61,10 @@ p.bold {font-weight: bold;}
   padding: 0;
   display: flex;
   gap: 0.25rem;
+  margin-bottom: -2px;
+  border-bottom: 1px solid #2d3942;
+  z-index: 1000;
+  position: relative;
 }
 
 #tabs button {
@@ -67,7 +72,6 @@ p.bold {font-weight: bold;}
   font-size: 0.85rem;
   background-color: #282f33;
   border: none;
-  border-bottom-color: #48d9f3;
   color: #e0eff1;
   border-radius: 4px 4px 0 0;
   padding: 0.75rem 1rem;
@@ -81,6 +85,8 @@ button#drupal {
   background-size: 70%;
   background-position-x: center;
   background-position-y: center;
+  margin-bottom: -2px;
+  border-bottom: 1px solid #2d3942;
 }
 button#drupal:hover {
   background: transparent url('../public/Wordmark_black.png') no-repeat;
@@ -99,42 +105,68 @@ button#wordpress {
   background-size: 70%;
   background-position-x: center;
   background-position-y: center;
+  margin-bottom: -2px;
+  border-bottom: 1px solid #2d3942;
 }
 button#wordpress:hover {
-  background: transparent url('../public/wplogo-black.png') no-repeat;
+  background: transparent url('../public/wplogo.png') no-repeat;
   background-size: 80%;
   background-position-x: center;
   background-position-y: center;
 }
 button#wordpress.active {
-  background: transparent url('../public/wplogo-black.png') no-repeat;
+  background: transparent url('../public/wplogo.png') no-repeat;
   background-size: 70%;
   background-position-x: center;
   background-position-y: center;
 }
 button#aem {
   background: transparent url('../public/aem.png') no-repeat;
-  background-size: 80%;
-  background-position-x: center;
+  background-size: 10%;
+  background-position-x: left;
   background-position-y: center;
+  margin-bottom: -2px;
+  border-bottom: 1px solid #2d3942;
 }
 button#aem:hover{
-  background-size: 80%;
-  background-position-x: center;
+  background-size: 11%;
+  background-position-x: left;
   background-position-y: center;
 }
 button#aem.active {
   background: transparent url('../public/aem.png') no-repeat;
-  background-size: 80%;
-  background-position-x: center;
+  background-size: 11%;
+  background-position-x: right 3rem;
   background-position-y: center;
 }
 
 #tabs button {
   width:auto;
   height:42px;
-  box-shadow: #48d9f3 0px -5px 5px 2px;
   margin: 5px 4px 0px 4px;
+  border-left: 1px solid #fff;
+  border-right: 1px solid #fff;
+  border-top: 1px solid #fff;
+}
+
+#tabs button::after {
+  background-color: #2d3942;
+  height: 3px;
+  content: "";
+  position: absolute;
+  bottom: -3px;
+  left: 3px;
+  right: 3px;
+}
+
+#tabs button.lead {
+  border-bottom:1px solid #fff;
+  border-radius:4px;
+}
+
+#tabs button.lead::after {
+content:"";
+height:0;
 }
 
 #tabs button span {
@@ -160,17 +192,24 @@ button#aem.active {
 
 #tabs img {width:100%;height:auto;}
 
-#tabs button:hover,
+#tabs button:hover
+{background-color:#2d3942;}
 #tabs button.active {
-  background-color: #48d9f3;
-  color: #273133;
-  box-shadow:none;
+  background-color: #2d3942;
+  color: #fff;
+  box-shadow: #48d9f3 0px -2px 2px 2px;
+  border-left: 1px solid transparent;
+  border-right: 1px solid transparent;
+  border-top: 1px solid transparent; 
 }
 
 #tab-content {
   background-color: #2d3942;
   border-radius: 0 4px 4px 4px;
   padding: 1rem;
+  position: relative;
+  z-index:999;
+  border: 1px solid #fff;
 }
 
 #tab-content li {
@@ -200,6 +239,7 @@ img.width100 {width:100%;height:auto;}
 .accordion-button {
   --bs-accordion-btn-icon-width:20px;
   --bs-accordion-btn-icon-height:20px;
+  background-color:transparent;
 }
 
 .accordion-button:not(.collapsed) {
@@ -221,6 +261,7 @@ img.width100 {width:100%;height:auto;}
 
 .accordion-item {
   color:#82c2ce;
+  background-color:transparent;
 }
 
 .accordion-body {
@@ -236,6 +277,13 @@ img.width100 {width:100%;height:auto;}
 }
 
 .accordion-header {margin-top:32px;}
+.accordion-header p {
+  margin-top: 0;
+  margin-bottom: 1rem;
+  font-weight: 500;
+  line-height: 1.2;
+  font-size:1rem;
+}
 
 .accordion-button::after {
   margin-left:32px;
@@ -245,3 +293,9 @@ img.width100 {width:100%;height:auto;}
   height: 20px;
 }
 a.readmore {text-decoration:none;}
+
+.sanmartin {
+  background:transparent url('../public/sanmartin.jpg') no-repeat;
+  background-size: cover;
+  min-height: 300px;
+}

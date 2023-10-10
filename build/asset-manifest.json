@@ -1,0 +1,17 @@
+{
+  "files": {
+    "main.css": "/static/css/main.69dc4d24.css",
+    "main.js": "/static/js/main.3dfd0780.js",
+    "static/media/sanmartin.jpg": "/static/media/sanmartin.c80089dac677031fa9cb.jpg",
+    "static/media/wplogo.png": "/static/media/wplogo.ccaa6fce2f76b64b16ea.png",
+    "static/media/Wordmark_black.png": "/static/media/Wordmark_black.40500a6b90f256578fd5.png",
+    "static/media/Wordmark_white.png": "/static/media/Wordmark_white.f021cce42f0ea12c453d.png",
+    "index.html": "/index.html",
+    "main.69dc4d24.css.map": "/static/css/main.69dc4d24.css.map",
+    "main.3dfd0780.js.map": "/static/js/main.3dfd0780.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.69dc4d24.css",
+    "static/js/main.3dfd0780.js"
+  ]
+}
