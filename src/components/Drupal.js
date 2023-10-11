@@ -4,7 +4,7 @@ function Drupal() {
             <div className='col-xs-12 col-lg-6'>
                 <h2>Baylor College of Medicine</h2>
                 <p><strong>Link</strong>: <a href='https://bcm.edu'>https://bcm.edu</a></p>
-                <p><strong>Host</strong>: <img class="host" src="Acquia.png" alt="acquia" /></p>
+                <p><strong>Host</strong>: <img className="host" src="Acquia.png" alt="acquia" /></p>
                 <div className="accordion accordion-flush" id="accordionBaylor">
                     <div className="accordion-item">
                         <h2 className="accordion-header" id="headingBaylor">
@@ -14,7 +14,7 @@ function Drupal() {
                         </h2>
                         <div id="collapseBaylor" className="accordion-collapse collapse" aria-labelledby="headingBaylor" data-bs-parent="#accordionBaylor">
                             <div className="accordion-body">
-                                <p class="bold"><strong>Technologies used</strong>: Drupal 8/9 CMS</p>
+                                <p className="bold"><strong>Technologies used</strong>: Drupal 8/9 CMS</p>
                                 <p><strong>Frontend Technologies</strong>: PHP, HTML, CSS, Bootstrap, Javascript, jQuery, Google Geolocation services api incorporated into a SPA React component focused on a clustered map solution. AWS for CDN Services</p>
                                 <p><strong>Development Stack used</strong>:</p>
                                 <p>Docker on LAMP stack, Acquia Cloud Services, AWS CDN</p>
@@ -44,6 +44,8 @@ function Drupal() {
                 <p><strong>Link</strong>: <a href='https://boardwalktl.com/'>https://boardwalktl.com</a></p>
                 <p><strong>Technologies used</strong>: Drupal 9 CMS</p>
                 <p><strong>Host</strong>: <img className="host" src="Pantheon_logo_black_0.png" alt="acquia" /></p>
+                <p>Bordwalk of Townlake was a website redesign project using Drupal.  The existing project had previously seen involvement from multiple developers without reaching completion. My primary objective was to bring this project to a final deliverable.</p>
+                <p>Within the project's scope, I tackled the task of repairing the Pantheon Pipeline, seamlessly integrating the prior work, all while maintaining a steady pace of code production. This involved not only resolving existing issues but also optimizing the development process to ensure an efficient workflow. In the end, my efforts culminated into an inspiring and user friendly website, marking a significant milestone in the project's journey.</p>
             </div>
         </div>
         </>   

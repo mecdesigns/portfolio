@@ -13,7 +13,7 @@ function Wordpress() {
                         </h2>
                         <div id="collapseStLukes" className="accordion-collapse collapse" aria-labelledby="headingStLukes" data-bs-parent="#accordionStLukes">
                             <div className="accordion-body">
-                                <p class="bold">Content Management Solution:</p>
+                                <p className="bold">Content Management Solution:</p>
                                 <ul>
                                     <li>Wordpress</li>
                                 </ul>

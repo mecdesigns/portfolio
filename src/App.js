@@ -6,8 +6,17 @@ import Drupal from './components/Drupal';
 import Wordpress from './components/Wordpress';
 import Aem from './components/Aem';
 import React from './components/React';
+import Apis from './components/Apis';
+import Hosting from './components/Hosting';
+import Programming from './components/Programming';
 
 const content = [
+  [
+  ],
+  [
+  ],
+  [
+  ],
   [
   ],
   [
@@ -110,17 +119,35 @@ export default function App() {
           <div id="collapseTwo" className="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionBackEnd">
             <div className="accordion-body">
               <div className="row infastructure">
-                <h3>Infastructure Monitoring</h3>
-                <p>I have a proven track record of effectively implementing custom-designed dashboards, which serve as a powerful platform for visualizing and presenting a wide spectrum of server and resource data. This accomplishment was achieved through the adept utilization of the Kibana Query Language, a specialized tool that allows for precise querying and visualization of complex data sets. These dashboards not only facilitate the monitoring of critical server metrics but also offer invaluable insights into resource utilization and performance, aiding in informed decision-making and resource optimization within the organization.</p>
-                <div className="col-xs-12 col-md-6">
-                  <video controls autoPlay muted loop>
-                    <source src="LM-ScreenRecording-GIF-HQ-1-1.mp4" type="video/mp4" />
-                  </video>
-                </div>
-                <div className="col-xs-12 col-md-6">
-                  <video controls autoPlay muted loop>
-                    <source src="IM-ScreenRecording-GIF-HQ-v1-1.mp4" alt="logz" />
-                  </video>
+                <h3>Back-End Proficiency</h3>
+                <div id="tabs2">
+                  <menu>
+                    <button id="cloud"
+                    className={activeContentIndex === 0 ? "active" : ""}
+                    onClick={() => setActiveContentIndex(0)} >
+                    API Solutions
+                    </button>
+                    <button id="hosting"
+                    className={activeContentIndex === 1 ? "active" : ""}
+                    onClick={() => setActiveContentIndex(1)} >
+                    Hosting Platforms
+                    </button>
+                    <button id="api"
+                    className={activeContentIndex === 2 ? "active" : ""}
+                    onClick={() => setActiveContentIndex(2)} >
+                    Languages/Libraries
+                    </button>
+                  </menu>
+                  <div id="tab-content2">
+                    <ul>
+                    {content[activeContentIndex].map((item) => (
+                    <li key={item}>{item}</li>
+                    ))}
+                    </ul>
+                    {activeContentIndex === 0 && <Apis />}
+                    {activeContentIndex === 1 && <Hosting />}
+                    {activeContentIndex === 2 && <Programming />}
+                  </div>
                 </div>
               </div> 
             </div>

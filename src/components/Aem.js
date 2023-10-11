@@ -35,7 +35,7 @@ function Aem() {
         </div>
         <div className="row margin-top">
             <div className='col-xs-12 col-lg-6'>
-                <img src="stjoseph.jpg" alt="St-Joseph-health" />
+                <img src="stjosephhealth.png" alt="St-Joseph-health" />
             </div>
             <div className='col-xs-12 col-lg-6'>
                 <h2>St. Joseph Health</h2>
